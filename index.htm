@@ -3,8 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <title>Website Navbar Example</title>
+    <link rel="stylesheet" href="assets/css/styles.css"> 
 </head>
+
 <body>
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                    <img src="assets/img/logoMilanio.png" height="50px" alt="Website Logo"> 
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#HeroSection">Lo Último</a></li>
+                    <li><a href="#Section1">Noticias</a></li>
+                    <li><a href="#Section2">Sitios de interés</a></li>
+                </ul>
+                <!-- Icono del Menú Responsive -->
+                <div class="menu-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section id="HeroSection">
+        <h2>Lo Último</h2>
+        <p>Contenido de la hero section.</p>
+    </section>
+
+    <section id="Section1">
+        <h2>Noticias</h2>
+        <p>Contenido de la sección 1.</p>
+    </section>
+
+    <section id="Section2">
+        <h2>Sitios de interés</h2>
+        <p>Contenido de la sección 2.</p>
+    </section>
+
+    <script>
+        document.querySelector('.menu-icon').addEventListener('click', function() {
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+    </script>
 </body>
 </html>
