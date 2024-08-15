@@ -41,8 +41,7 @@ header h1 {
     width: 100%;
     max-width: 1200px;
     padding: 10px 20px;
-    background-color: #b90000; /* Agregado para darle color al navbar */
-}
+    background-color: #b90000; 
 
 /* Logo en el Navbar */
 .logo img {
@@ -56,7 +55,7 @@ nav ul {
     margin: 0;
     padding: 0;
     display: flex;
-    gap: 20px; /* Añadido espacio entre los enlaces */
+    gap: 20px; 
 }
 
 nav ul li {
@@ -72,7 +71,7 @@ nav ul li a {
 
 nav ul li a:hover {
     background-color: #800000;
-    border-radius: 3px; /* Añade bordes redondeados al efecto hover */
+    border-radius: 3px; 
 }
 
 /* Icono del Menú Responsive */
@@ -179,4 +178,5 @@ footer p {
     .menu-icon {
         display: flex;
     }
+}
 }
