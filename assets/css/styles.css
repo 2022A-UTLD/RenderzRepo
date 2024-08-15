@@ -1,3 +1,4 @@
+/* Estilos generales */
 body {
     font-family: Arial, sans-serif;
     color: #333;
@@ -6,13 +7,17 @@ body {
     padding: 0;
 }
 
+/* Contenedor principal */
 .container {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
+    display: flex;
+    justify-content: center;
 }
 
+/* Encabezado */
 header {
     background-color: #a10000;
     color: white;
@@ -25,16 +30,37 @@ header h1 {
     text-transform: uppercase;
 }
 
+/* Navbar */
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    padding: 10px 20px;
+    background-color: #b90000; /* Agregado para darle color al navbar */
+}
+
+/* Logo en el Navbar */
+.logo img {
+    height: 50px;
+    display: block;
+}
+
+/* Menú de navegación */
 nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
     display: flex;
-    background-color: #b90000;
+    gap: 20px; /* Añadido espacio entre los enlaces */
 }
 
 nav ul li {
-    margin-right: 10px;
+    margin: 0;
 }
 
 nav ul li a {
@@ -46,8 +72,25 @@ nav ul li a {
 
 nav ul li a:hover {
     background-color: #800000;
+    border-radius: 3px; /* Añade bordes redondeados al efecto hover */
 }
 
+/* Icono del Menú Responsive */
+.menu-icon {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-icon span {
+    height: 3px;
+    width: 25px;
+    background: #fff;
+    margin: 4px;
+    transition: 0.3s;
+}
+
+/* Secciones */
 section {
     margin-top: 20px;
 }
@@ -59,6 +102,7 @@ section h2 {
     margin-bottom: 15px;
 }
 
+/* Artículos */
 article {
     display: flex;
     background-color: white;
@@ -84,6 +128,7 @@ article p {
     margin: 0;
 }
 
+/* Pie de página */
 footer {
     background-color: #a10000;
     color: white;
@@ -96,6 +141,7 @@ footer p {
     margin: 0;
 }
 
+/* Estilos específicos de botones y enlaces */
 .button {
     background-color: #b90000;
     color: white;
@@ -107,4 +153,30 @@ footer p {
 
 .button:hover {
     background-color: #800000;
+}
+
+/* Estilo responsive para pantallas pequeñas */
+@media (max-width: 768px) {
+    .navbar {
+        justify-content: space-between;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        background-color: #b90000;
+        width: 100%;
+        left: 0;
+        text-align: center;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .menu-icon {
+        display: flex;
+    }
 }
