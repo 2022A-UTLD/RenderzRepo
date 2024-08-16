@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -29,9 +29,11 @@
         </div>
     </header>
 
-    <section id="HeroSection">
-        <h2>Lo Último</h2>
-        <p>Contenido de la hero section.</p>
+    <section id="HeroSection" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Las Noticias Más Relevantes del Día</h1>
+            <a href="#Section1" class="hero-button">Ver Noticias Recientes</a>
+        </div>
     </section>
 
     <section id="Section1">
@@ -94,51 +96,70 @@
     
     </section>
 
-    <script>
-        document.querySelector('.menu-icon').addEventListener('click', function() {
-            document.querySelector('.nav-links').classList.toggle('active');
-        });
-    </script>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="assets/img/logoMilanio.png" alt="Logo" height="50px">
+                <p>UNA EMPRESA DE LA LAGUNA</p>
+            </div>
 
-<footer>
-    <div class="footer-container">
-        <div class="footer-logo">
-            <img src="assets/img/logoMilanio.png" alt="Logo" height="50px">
-            <p>UNA EMPRESA DE LA LAGUNA</p>
-        </div>
+            <div class="footer-links">
+                <ul>
+                    <li><a href="#about">Sobre Nosotros</a></li>
+                    <li><a href="#contact">Contáctanos</a></li>
+                    <li><a href="#privacy">Política de Privacidad</a></li>
+                    <li><a href="#subscribe">Suscripciones</a></li>
+                    <li><a href="#legal">Aviso Legal</a></li>
+                </ul>
+            </div>
 
-        <div class="footer-links">
-            <ul>
-                <li><a href="#about">Sobre Nosotros</a></li>
-                <li><a href="#contact">Contáctanos</a></li>
-                <li><a href="#privacy">Política de Privacidad</a></li>
-                <li><a href="#subscribe">Suscripciones</a></li>
-                <li><a href="#legal">Aviso Legal</a></li>
-            </ul>
-        </div>
+            <div class="footter-social">
+                <p>Visítanos en:</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/mileniotorreon/?locale=es_LA"><img src="assets/img/facebook-icon.png" alt="Facebook"></a>
+                    <a href="https://twitter.com/Milenio?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><img src="assets/img/x-icon.png" alt="X"></a>
+                    <a href="https://www.instagram.com/milenio/?hl=es"><img src="assets/img/instagram-icon.png" alt="Instagram"></a>
+                    <a href="https://www.youtube.com/channel/UCFxHplbcoJK9m70c4VyTIxg"><img src="assets/img/youtube-icon.png" alt="YouTube"></a>
+                    <a href="https://www.tiktok.com/@milenio?lang=es"><img src="assets/img/tiktok-icon.png" alt="TikTok"></a>
+                </div>
+            </div>
 
-        <div class="footter-social">
-            <p>Visítanos en:</p>
-            <div class="social-icons">
-                <a href="https://www.facebook.com/mileniotorreon/?locale=es_LA"><img src="assets/img/facebook-icon.png" alt="Facebook"></a>
-                <a href="https://twitter.com/Milenio?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><img src="assets/img/x-icon.png" alt="X"></a>
-                <a href="https://www.instagram.com/milenio/?hl=es"><img src="assets/img/instagram-icon.png" alt="Instagram"></a>
-                <a href="https://www.youtube.com/channel/UCFxHplbcoJK9m70c4VyTIxg"><img src="assets/img/youtube-icon.png" alt="YouTube"></a>
-                <a href="https://www.tiktok.com/@milenio?lang=es"><img src="assets/img/tiktok-icon.png" alt="TikTok"></a>
+            <div class="footer-contact">
+                <p>Email: renderz@milanio.com</p>
+                <p>Teléfono: +52 871 135 5402</p>
             </div>
         </div>
 
-        <div class="footer-contact">
-            <p>Email: renderz@milanio.com</p>
-            <p>Teléfono: +52 871 135 5402</p>
+        <div class="footer-bottom">
+            <p>Derechos Reservados © Grupo MilAnio 2024</p>
+            <img src="assets/img/esr-icon.png" alt="Empresa Socialmente Responsable">
         </div>
-    </div>
+    </footer>
 
-    <div class="footer-bottom">
-        <p>Derechos Reservados © Grupo MilAnio 2024</p>
-        <img src="assets/img/esr-icon.png" alt="Empresa Socialmente Responsable">
-    </div>
-</footer>
+    <!-- Script para cambiar las imágenes de fondo dinámicamente -->
+    <script>
+        // Lista de imágenes de fondo
+        const images = [
+            'url("assets/img/6T6GUURJPNC3SMGADRQZ7S6ZZE.png")',
+            'url("assets/img/mezquita-yassin-gaza.webp")',
+            'url("assets/img/militares-kd7H-U60277339106wz-1200x840@diario_abc.webp")',
+            'url("assets/img/ucrania.jpeg")'
+        ];
+
+        let currentIndex = 0;
+        const heroSection = document.querySelector('.hero');
+
+        // Función para cambiar la imagen de fondo
+        function changeBackgroundImage() {
+            heroSection.style.backgroundImage = images[currentIndex];
+            currentIndex = (currentIndex + 1) % images.length;
+        }
+
+        setInterval(changeBackgroundImage, 6000);
+
+        // Iniciar con la primera imagen
+        changeBackgroundImage();
+    </script>
 
 </body>
 </html>
