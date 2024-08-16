@@ -1,56 +1,210 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Website Navbar Example</title>
+    <link rel="stylesheet" href="assets/css/styles.css"> 
 </head>
+
 <body>
-  <section class="container">
-    <!-- Fila única que contiene las 3 tarjetas -->
-    <div class="row">
-      
-      <!-- Tarjeta 1 -->
-      <div class="col s12 m4">
-        <div class="card" style="min-height: 600px;">
-          <div class="card-image">
-            <img src="image.png" style="height: 250px; object-fit: cover;">
-          </div>
-          <div class="card-content" style="min-height: 200px;">
-            <span class="card-title" style="font-weight: bold;">Médico en vuelo a Torreón interviene con éxito para salvar a un pasajero.</span>
-            <p>Durante un vuelo de Guadalajara a Torreón, un pasajero sufrió un paro cardíaco. Afortunadamente, Javier de la Torre Anderson, un médico anestesiólogo que estaba de vacaciones, junto con otros colegas, lograron reanimarlo.</p>
-          </div>
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                    <img src="assets/img/logoMilanio.png" height="50px" alt="Website Logo"> 
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#HeroSection">Lo Último</a></li>
+                    <li><a href="#Section1">Noticias</a></li>
+                    <li><a href="#Section2">Sitios de interés</a></li>
+                </ul>
+                <!-- Icono del Menú Responsive -->
+                <div class="menu-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
         </div>
-      </div>
-      
-      <!-- Tarjeta 2 -->
-      <div class="col s12 m4">
-        <div class="card" style="min-height: 600px;">
-          <div class="card-image">
-            <img src="MARCO.jpg" style="height: 250px; object-fit: cover;">
-          </div>
-          <div class="card-content" style="min-height: 200px;">
-            <span class="card-title" style="font-weight: bold;">Marco Verde gana medalla de plata en boxeo en los Juegos Olímpicos de París 2024</span>
-            <p>México sumó una medalla de plata en los Juegos Olímpicos de París 2024 de la mano del boxeador Marco Verde, quien se colgó la presea plateada tras caer ante el uzbeko Asadkhuja Muydinkhujaev.</p>
-          </div>
-        </div>
-      </div>
+    </header>
 
-      <!-- Tarjeta 3 -->
-      <div class="col s12 m4">
-        <div class="card" style="min-height: 600px;">
-          <div class="card-image">
-            <img src="monk.jpeg" style="height: 250px; object-fit: cover;">
-          </div>
-          <div class="card-content" style="min-height: 200px;">
-            <span class="card-title" style="font-weight: bold;">El Gobierno registra 49 casos de viruela del mono este año en México</span>
-            <p>La Secretaría de Salud ha informado que se han confirmado 49 contagios de viruela del mono. La mayoría está en Ciudad de México, con 29 casos, aunque hay también otros siete contagios en Quintana Roo, tres en Jalisco, dos en Morelos y Puebla.</p>
-          </div>
+    <section id="HeroSection" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Las Noticias Más Relevantes del Día</h1>
+            <a href="#Section1" class="hero-button">Ver Noticias Recientes</a>
         </div>
-      </div>
+    </section>
 
-    </div> <!-- Fin de la fila -->
-  </section> <!-- Fin del contenedor -->
+    <section id="Section1">
+        <header>
+            <h2>Noticias</h2>
+        </header>
+        <section class="container">
+            <div class="row">
+              
+              <!-- Tarjeta 1 -->
+              <div class="col s12 m4">
+                <div class="card" style="min-height: 600px;">
+                  <div class="card-image">
+                    <img src="assets/img/image.png" style="height: 250px; object-fit: cover;">
+                  </div>
+                  <div class="card-content" style="min-height: 200px;">
+                    <span class="card-title" style="font-weight: bold;">Médico en vuelo a Torreón interviene con éxito para salvar a un pasajero.</span>
+                    <p>Durante un vuelo de Guadalajara a Torreón, un pasajero sufrió un paro cardíaco. Afortunadamente, Javier de la Torre Anderson, un médico anestesiólogo que estaba de vacaciones, junto con otros colegas, lograron reanimarlo.</p>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Tarjeta 2 -->
+              <div class="col s12 m4">
+                <div class="card" style="min-height: 600px;">
+                  <div class="card-image">
+                    <img src="assets/img/MARCO.jpg" style="height: 250px; object-fit: cover;">
+                  </div>
+                  <div class="card-content" style="min-height: 200px;">
+                    <span class="card-title" style="font-weight: bold;">Marco Verde gana medalla de plata en boxeo en los Juegos Olímpicos de París 2024</span>
+                    <p>México sumó una medalla de plata en los Juegos Olímpicos de París 2024 de la mano del boxeador Marco Verde, quien se colgó la presea plateada tras caer ante el uzbeko Asadkhuja Muydinkhujaev.</p>
+                  </div>
+                </div>
+              </div>
+        
+              <!-- Tarjeta 3 -->
+              <div class="col s12 m4">
+                <div class="card" style="min-height: 600px;">
+                  <div class="card-image">
+                    <img src="assets/img/monk.jpeg" style="height: 250px; object-fit: cover;">
+                  </div>
+                  <div class="card-content" style="min-height: 200px;">
+                    <span class="card-title" style="font-weight: bold;">El Gobierno registra 49 casos de viruela del mono este año en México</span>
+                    <p>La Secretaría de Salud ha informado que se han confirmado 49 contagios de viruela del mono. La mayoría está en Ciudad de México, con 29 casos, aunque hay también otros siete contagios en Quintana Roo, tres en Jalisco, dos en Morelos y Puebla.</p>
+                  </div>
+                </div>
+              </div>
+        
+            </div> <!-- Fin de la fila -->
+          </section> <!-- Fin del contenedor -->
+    </section>
+
+    <section id="Section2">
+        <header>
+            <h2>Sitios de interés</h2>
+        </header>
+    
+    <div class="container">
+        <section class="blog-post">
+            <article class="closable-article">
+                <img src="assets/img/image1.jpg" alt="image1.jpg">
+                <h3>Escasez de agua</h3>
+                <p>Sa 27 Enero 2024</p>
+                <a href="#" class="button" onclick="openModal('Escasez de agua', 'Debido a la falta de agua desde hace un mes, vecinos de la colonia Molino del Rey, en la alcaldía Miguel Hidalgo, bloquearon este martes la circulación vehicular por segundo día consecutivo para exigir a las autoridades capitalinas regularizar el abasto.')">Leer más</a>
+            </article>
+            <article class="closable-article">
+                <img src="assets/img/image2.jpg" alt="image2.jpg">
+                <h3>Deadpool & Wolverine</h3>
+                <p>Ju 25 julio 2024</p>
+                <a href="#" class="button" onclick="openModal('Fecha de estreno de Deadpool & Wolverine', 'Marvel ha confirmado que el estreno de Deadpool 3 en cines tendrá lugar el 25 de julio de 2024. De la enorme reestructuración de lanzamiento de Disney como consecuencia de las huelgas de Hollywood')">Leer más</a>
+            </article>
+            <article class="closable-article">
+                <img src="assets/img/image3.jpg" alt="image3.jpg">
+                <h3>Juegos Olímpicos de París</h3>
+                <p>Vi 26 julio 2024</p>
+                <a href="#" class="button" onclick="openModal('Juegos Olímpicos de París 2024', 'Los Juegos Olímpicos de París 2024 se realizarán del 26 de julio al 11 de agosto de este año la ceremonia de apertura es el viernes 26 de julio y la ceremonia de clausura el domingo 11 de agosto.')">Leer más</a>
+            </article>
+        </section>
+    </div>
+    
+        <!-- Modal -->
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <h2 id="modalTitle"></h2>
+                <p id="modalText"></p>
+                <button class="modal-close" onclick="closeModal()">Cerrar</button>
+            </div>
+        </div>
+    
+        <script>
+            function openModal(title, text) {
+                document.getElementById('modalTitle').textContent = title;
+                document.getElementById('modalText').textContent = text;
+                document.getElementById('myModal').style.display = 'block';
+            }
+    
+            function closeModal() {
+                document.getElementById('myModal').style.display = 'none';
+            }
+    
+            function closeArticle(element) {
+                element.parentElement.style.display = 'none';
+            }
+        </script>
+    
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="assets/img/logoMilanio.png" alt="Logo" height="50px">
+                <p>UNA EMPRESA DE LA LAGUNA</p>
+            </div>
+
+            <div class="footer-links">
+                <ul>
+                    <li><a href="#about">Sobre Nosotros</a></li>
+                    <li><a href="#contact">Contáctanos</a></li>
+                    <li><a href="#privacy">Política de Privacidad</a></li>
+                    <li><a href="#subscribe">Suscripciones</a></li>
+                    <li><a href="#legal">Aviso Legal</a></li>
+                </ul>
+            </div>
+
+            <div class="footter-social">
+                <p>Visítanos en:</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/mileniotorreon/?locale=es_LA"><img src="assets/img/facebook-icon.png" alt="Facebook"></a>
+                    <a href="https://twitter.com/Milenio?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><img src="assets/img/x-icon.png" alt="X"></a>
+                    <a href="https://www.instagram.com/milenio/?hl=es"><img src="assets/img/instagram-icon.png" alt="Instagram"></a>
+                    <a href="https://www.youtube.com/channel/UCFxHplbcoJK9m70c4VyTIxg"><img src="assets/img/youtube-icon.png" alt="YouTube"></a>
+                    <a href="https://www.tiktok.com/@milenio?lang=es"><img src="assets/img/tiktok-icon.png" alt="TikTok"></a>
+                </div>
+            </div>
+
+            <div class="footer-contact">
+                <p>Email: renderz@milanio.com</p>
+                <p>Teléfono: +52 871 135 5402</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>Derechos Reservados © Grupo MilAnio 2024</p>
+            <img src="assets/img/esr-icon.png" alt="Empresa Socialmente Responsable">
+        </div>
+    </footer>
+
+    <!-- Script para cambiar las imágenes de fondo dinámicamente -->
+    <script>
+        // Lista de imágenes de fondo
+        const images = [
+            'url("assets/img/6T6GUURJPNC3SMGADRQZ7S6ZZE.png")',
+            'url("assets/img/mezquita-yassin-gaza.webp")',
+            'url("assets/img/militares-kd7H-U60277339106wz-1200x840@diario_abc.webp")',
+            'url("assets/img/ucrania.jpeg")'
+        ];
+
+        let currentIndex = 0;
+        const heroSection = document.querySelector('.hero');
+
+        // Función para cambiar la imagen de fondo
+        function changeBackgroundImage() {
+            heroSection.style.backgroundImage = images[currentIndex];
+            currentIndex = (currentIndex + 1) % images.length;
+        }
+
+        setInterval(changeBackgroundImage, 6000);
+
+        // Iniciar con la primera imagen
+        changeBackgroundImage();
+    </script>
+
 </body>
-
 </html>
