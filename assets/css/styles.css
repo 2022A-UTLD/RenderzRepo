@@ -183,14 +183,9 @@ footer p {
     font-weight: bold;
 }
 
-.hero-description {
-    font-size: 24px;
-    margin-bottom: 30px;
-}
-
 .hero-button {
-    background-color: #FF4500; /* Naranja vibrante */
-    color: white;
+    background-color: #ffffff; /* Botón blanco */
+    color: black;
     padding: 15px 30px;
     font-size: 18px;
     border: none;
@@ -201,5 +196,10 @@ footer p {
 }
 
 .hero-button:hover {
-    background-color: #FF6347; /* Color más claro al hacer hover */
+    background-color: #f1f1f1; /* Color más claro al hacer hover */
+}
+
+/* Ajustes adicionales para la imagen de fondo */
+.hero {
+    background-image: url('../img/6T6GUURJPNC3SMGADRQZ7S6ZZE.png'); /* Reemplaza con la imagen que desees */
 }
