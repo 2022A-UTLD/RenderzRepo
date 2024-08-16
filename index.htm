@@ -3,10 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Página de Noticias</title>
-    <link rel="stylesheet" href="assets/css/styles.css"> <!-- Vincula el archivo CSS --> 
+    <title>Website Navbar Example</title>
+    <link rel="stylesheet" href="assets/css/styles.css"> 
 </head>
+
 <body>
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                    <img src="assets/img/logoMilanio.png" height="50px" alt="Website Logo"> 
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#HeroSection">Lo Último</a></li>
+                    <li><a href="#Section1">Noticias</a></li>
+                    <li><a href="#Section2">Sitios de interés</a></li>
+                </ul>
+                <!-- Icono del Menú Responsive -->
+                <div class="menu-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section id="HeroSection">
+        <h2>Lo Último</h2>
+        <p>Contenido de la hero section.</p>
+    </section>
+
+    <section id="Section1">
+        <h2>Noticias</h2>
+        <p>Contenido de la sección 1.</p>
+    </section>
+
+    <section id="Section2">
+        <h2>Sitios de interés</h2>
+        <p>Contenido de la sección 2.</p>
+    </section>
+
+    <script>
+        document.querySelector('.menu-icon').addEventListener('click', function() {
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+    </script>
+
+<footer>
+    <div class="footer-container">
+        <div class="footer-logo">
+            <img src="assets/img/logoMilanio.png" alt="Logo" height="50px">
+            <p>UNA EMPRESA DE LA LAGUNA</p>
+        </div>
+
+        <div class="footer-links">
+            <ul>
+                <li><a href="#about">Sobre Nosotros</a></li>
+                <li><a href="#contact">Contáctanos</a></li>
+                <li><a href="#privacy">Política de Privacidad</a></li>
+                <li><a href="#subscribe">Suscripciones</a></li>
+                <li><a href="#legal">Aviso Legal</a></li>
+            </ul>
+        </div>
+
+        <div class="footter-social">
+            <p>Visítanos en:</p>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/mileniotorreon/?locale=es_LA"><img src="assets/img/facebook-icon.png" alt="Facebook"></a>
+                <a href="https://twitter.com/Milenio?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><img src="assets/img/x-icon.png" alt="X"></a>
+                <a href="https://www.instagram.com/milenio/?hl=es"><img src="assets/img/instagram-icon.png" alt="Instagram"></a>
+                <a href="https://www.youtube.com/channel/UCFxHplbcoJK9m70c4VyTIxg"><img src="assets/img/youtube-icon.png" alt="YouTube"></a>
+                <a href="https://www.tiktok.com/@milenio?lang=es"><img src="assets/img/tiktok-icon.png" alt="TikTok"></a>
+            </div>
+        </div>
+
+        <div class="footer-contact">
+            <p>Email: renderz@milanio.com</p>
+            <p>Teléfono: +52 871 135 5402</p>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>Derechos Reservados © Grupo MilAnio 2024</p>
+        <img src="assets/img/esr-icon.png" alt="Empresa Socialmente Responsable">
+    </div>
+</footer>
+
     <!-- Contenido de tu página -->
     <section class="hero">
         <div class="hero-content">

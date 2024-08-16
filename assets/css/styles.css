@@ -15,6 +15,8 @@ body {
     padding: 20px;
     display: flex;
     justify-content: center;
+    display: flex;
+    justify-content: center;
 }
 
 /* Encabezado */
@@ -50,6 +52,26 @@ header h1 {
     display: block;
 }
 
+/* Navbar */
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    padding: 10px 20px;
+    background-color: #b90000; 
+}
+
+/* Logo en el Navbar */
+.logo img {
+    height: 50px;
+    display: block;
+}
+
 /* Menú de navegación */
 nav ul {
     list-style: none;
@@ -72,6 +94,22 @@ nav ul li a {
 
 nav ul li a:hover {
     background-color: #800000;
+    border-radius: 3px; 
+}
+
+/* Icono del Menú Responsive */
+.menu-icon {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-icon span {
+    height: 3px;
+    width: 25px;
+    background: #fff;
+    margin: 4px;
+    transition: 0.3s;
     border-radius: 3px; 
 }
 
@@ -132,13 +170,88 @@ article p {
 footer {
     background-color: #a10000;
     color: white;
+    padding: 20px;
     text-align: center;
-    padding: 10px 20px;
-    margin-top: 20px;
 }
 
-footer p {
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-logo {
+    text-align: left;
+}
+
+.footer-logo p {
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.footer-links {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
     margin: 0;
+}
+
+.footer-links ul li {
+    margin: 5px 0;
+}
+
+.footer-links ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-links ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-social {
+    text-align: center;
+}
+
+.footer-social p {
+    margin-bottom: 10px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.social-icons a img {
+    width: 25px;
+    height: 25px;
+}
+
+.footer-contact {
+    text-align: right;
+    font-size: 14px;
+}
+
+.footer-bottom {
+    border-top: 1px solid #b90000;
+    padding-top: 10px;
+    margin-top: 20px;
+    font-size: 12px;
+}
+
+.footer-bottom img {
+    height: 30px;
+    margin-left: 10px;
+    vertical-align: middle;
 }
 
 /* Estilos específicos de botones y enlaces */
@@ -202,4 +315,31 @@ footer p {
 /* Ajustes adicionales para la imagen de fondo */
 .hero {
     background-image: url('../img/6T6GUURJPNC3SMGADRQZ7S6ZZE.png'); /* Reemplaza con la imagen que desees */
+}
+
+
+/* Estilo responsive para pantallas pequeñas */
+@media (max-width: 768px) {
+    .navbar {
+        justify-content: space-between;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        background-color: #b90000;
+        width: 100%;
+        left: 0;
+        text-align: center;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .menu-icon {
+        display: flex;
+    }
 }
